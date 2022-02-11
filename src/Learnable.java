@@ -1,2 +1,2 @@
-public interface Learnable {
-}
+//public interface Learnable {
+//}
