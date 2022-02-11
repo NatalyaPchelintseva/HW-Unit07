@@ -1,8 +1,8 @@
 import java.util.Arrays;
 
-public class Student extends Human {
-    private int courseNumber;
-    private String[] learningCourses;
+public class Student extends Human implements Learnable {
+    private final int courseNumber;
+    private final String[] learningCourses;
 
     public Student(String name, int age, String address, int courseNumber, String[] learningCourses) {
         super(name, age, address);
@@ -26,5 +26,10 @@ public class Student extends Human {
                 ", courseNumber=" + courseNumber +
                 ", learningCourses=" + Arrays.toString(learningCourses) +
                 '}';
+    }
+
+    @Override
+    public void learn() {
+        System.out.println("I learn " + Arrays.toString(learningCourses) + "\n");
     }
 }

@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class SchoolTeacher extends Teacher {
-    private String schoolName;
+    private final String schoolName;
 
     public SchoolTeacher(String name, int age, String address, String[] subjectsTaught, String schoolName) {
         super(name, age, address, subjectsTaught);
@@ -23,4 +23,5 @@ public class SchoolTeacher extends Teacher {
                 ", subjectsTaught=" + Arrays.toString(subjectsTaught) +
                 '}';
     }
+
 }
